@@ -29,6 +29,7 @@ export default {
 .container {
   width: 900px;
   margin: 0 auto;
+  padding-bottom: 60px;
   text-align: center;
   color: white;
   margin-top: 300px;

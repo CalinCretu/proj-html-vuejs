@@ -46,8 +46,6 @@ export default {
   transform: translate(-50%, -50%);
   left: 50%;
 
-
-
   .cards {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
