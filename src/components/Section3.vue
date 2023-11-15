@@ -196,7 +196,7 @@ export default {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     gap: 30px;
-    row-gap: 20px;
+    row-gap: 30px;
     margin: 30px 0;
 
     .icons {
