@@ -1,6 +1,10 @@
 <script>
+import HeroCards from './HeroCards.vue'
 export default {
   name: 'Hero',
+  components: {
+    HeroCards
+  }
 }
 </script>
 
@@ -18,10 +22,13 @@ export default {
         READ MORE
       </button>
     </div>
+    <div>
+      <HeroCards />
+    </div>
   </div>
 </template>
 
-<style scoped>
+<style lang="scss" scoped>
 .container {
   max-width: 1800px;
   margin: 0 auto;
@@ -29,6 +36,8 @@ export default {
   color: white;
   text-transform: uppercase;
   position: relative;
+
+  .hero-image {}
 
   .absolute {
     position: absolute;
