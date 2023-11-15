@@ -1,5 +1,5 @@
 <script>
-import Dropdown from './Dropdown.vue'
+import Dropdown from './Dropdown.vue';
 export default {
   components: {
     Dropdown
@@ -74,9 +74,9 @@ export default {
 
 <style lang="scss" scoped>
 .container {
-  width: 1915px;
+  width: 1800px;
   margin: 0 auto;
-  padding: 30px 30px;
+  padding: 25px 30px;
   display: flex;
   justify-content: space-between;
   position: relative;
@@ -104,8 +104,9 @@ export default {
     }
 
     .icon {
-      -webkit-filter: invert(1);
       filter: invert(1);
+      width: 22px;
+      margin-left: 15px;
     }
 
     .icon:hover {
@@ -117,18 +118,19 @@ export default {
       -webkit-filter: invert(1);
       filter: invert(1);
       width: 15px;
-      margin: 0 8px;
+      margin: 8px;
     }
 
     .dropdown-icon:hover {
       width: 25px;
-      margin: 0 3px;
+      margin: -1px 3px;
     }
 
     .dropdown {
       position: absolute;
       top: 100%;
       left: 66%;
+      z-index: 999;
     }
   }
 
