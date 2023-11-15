@@ -81,6 +81,7 @@ export default {
       .icon {
         font-size: 100px;
         padding: 30px;
+        border: 1px solid transparent;
       }
     }
   }
@@ -88,9 +89,9 @@ export default {
   .card:hover {
     .icon {
       color: #F2870C;
-      border: 1px solid white;
+      border: 1px solid #f0a857;
       border-radius: 50%;
-      box-shadow: 0px 0px 20px #F2870C;
+      box-shadow: 0px 0px 40px #F2870C;
     }
   }
 }
