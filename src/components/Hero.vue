@@ -37,8 +37,6 @@ export default {
   text-transform: uppercase;
   position: relative;
 
-  .hero-image {}
-
   .absolute {
     position: absolute;
     top: 40%;

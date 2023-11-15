@@ -71,6 +71,7 @@ export default {
       .card-description {
         font-size: 15px;
         color: grey;
+        text-transform: capitalize;
       }
 
       .image {
