@@ -148,7 +148,7 @@ export default {
 </script>
 
 <template>
-  <div class="container">
+  <div class="container-md">
     <div class="second-title">
       Who we are
     </div>
@@ -175,22 +175,7 @@ export default {
 </template>
 
 <style lang="scss" scoped>
-.container {
-  max-width: 1360px;
-  margin: 0 auto;
-  padding: 60px 0;
-  text-align: center;
-  color: white;
-
-  .second-title {
-    color: #F2870C;
-    font-size: 25px;
-    margin-bottom: 20px;
-  }
-
-  .title {
-    font-size: 80px;
-  }
+.container-md {
 
   .cards {
     display: grid;

@@ -5,7 +5,7 @@ export default {
 </script>
 
 <template>
-  <div class="container">
+  <div class="container-lg">
     <img src="/imgs/Video.jpg" alt="">
     <div class="absolute">
       <div>
@@ -19,22 +19,13 @@ export default {
 </template>
 
 <style lang="scss" scoped>
-.container {
-  position: relative;
-  max-width: 1800px;
-  margin: 0 auto;
-  color: white;
-  text-align: center;
+.container-lg {
+  padding: 60px 0;
 
   .play-button {
     color: #F2870C;
     font-size: 90px;
     margin-bottom: 40px;
-  }
-
-  .title {
-    font-size: 60px;
-    text-transform: uppercase;
   }
 
   .absolute {

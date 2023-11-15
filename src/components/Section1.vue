@@ -5,7 +5,7 @@ export default {
 </script>
 
 <template>
-  <div class="container">
+  <div class="container-sm">
     <div class="second-title">
       Who we are
     </div>
@@ -26,44 +26,14 @@ export default {
 </template>
 
 <style lang="scss" scoped>
-.container {
-  width: 900px;
-  margin: 0 auto;
-  padding-bottom: 60px;
-  text-align: center;
-  color: white;
+.container-sm {
   margin-top: 300px;
-  text-transform: uppercase;
-
-  .second-title {
-    color: #F2870C;
-    font-size: 25px;
-    margin-bottom: 20px;
-  }
-
-  .title {
-    font-size: 80px;
-    margin-bottom: 25px;
-  }
+  text-align: center;
 
   .monologue {
     color: rgba(255, 255, 255, 0.5);
-    margin-bottom: 30px;
+    margin: 30px 0;
     text-transform: capitalize;
-  }
-
-  .button {
-    border: 1px solid rgb(244, 135, 11, 0.6);
-    padding: 12px 50px;
-    background-color: transparent;
-    color: white;
-    font-size: 15px;
-  }
-
-  .button:hover {
-    cursor: pointer;
-    background-color: rgb(244, 135, 11);
-    border: 1px solid rgb(244, 135, 11);
   }
 }
 </style>

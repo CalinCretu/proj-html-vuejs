@@ -48,7 +48,7 @@ export default {
 </script>
 
 <template>
-  <div class="container">
+  <div class="container-lg">
     <div class="logo">
       <a href="#">
         <img :src="logo" alt="">
@@ -73,13 +73,10 @@ export default {
 </template>
 
 <style lang="scss" scoped>
-.container {
-  width: 1800px;
-  margin: 0 auto;
+.container-lg {
   padding: 25px 30px;
   display: flex;
   justify-content: space-between;
-  position: relative;
 
   .logo {
     max-width: 180px;
@@ -128,6 +125,7 @@ export default {
 
     .dropdown {
       position: absolute;
+      text-align: start;
       top: 100%;
       left: 66%;
       z-index: 999;
