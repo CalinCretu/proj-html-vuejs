@@ -5,17 +5,17 @@ export default {
     return {
       cards: [
         {
-          image: '/imgs/Subwoofer.svg',
+          image: 'fa-solid fa-drum',
           title: 'Original Ideas',
           description: 'Contrary Popular Belief, Lorem Ipsum Not Simply Ipsum Ransom Text',
         },
         {
-          image: '/imgs/Disc.svg',
+          image: 'fa-solid fa-compact-disc',
           title: 'Music Studio',
           description: 'Contrary Popular Belief, Lorem Ipsum Not Simply Ipsum Ransom Text',
         },
         {
-          image: '/imgs/Headphones.svg',
+          image: 'fa-solid fa-headphones',
           title: 'Acoustic Covers',
           description: 'Contrary Popular Belief, Lorem Ipsum Not Simply Ipsum Ransom Text',
         },
@@ -29,9 +29,15 @@ export default {
   <div class="card-container">
     <ul class="cards">
       <li class="card" v-for="card in cards">
-        <img class="image" :src="card.image" alt="">
-        <div class="card-title">{{ card.title }}</div>
-        <div class="card-description">{{ card.description }}</div>
+        <div>
+          <font-awesome-icon class="icon" :icon="card.image" />
+        </div>
+        <div class="card-title">
+          {{ card.title }}
+        </div>
+        <div class="card-description">
+          {{ card.description }}
+        </div>
       </li>
     </ul>
   </div>
@@ -58,7 +64,7 @@ export default {
       align-items: center;
       justify-content: center;
       background-color: rgba(18, 18, 18);
-      padding: 60px;
+      padding: 70px 60px;
 
       .card-title {
         text-transform: uppercase;
@@ -72,10 +78,19 @@ export default {
         text-transform: capitalize;
       }
 
-      .image {
-        max-width: 100px;
-        filter: invert(1);
+      .icon {
+        font-size: 100px;
+        padding: 30px;
       }
+    }
+  }
+
+  .card:hover {
+    .icon {
+      color: #F2870C;
+      border: 1px solid white;
+      border-radius: 50%;
+      box-shadow: 0px 0px 20px #F2870C;
     }
   }
 }
