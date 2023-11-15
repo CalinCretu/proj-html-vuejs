@@ -2,11 +2,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'Cabin', sans-serif;
-  font-family: 'Open Sans', sans-serif;
   font-family: 'Oswald', sans-serif;
-  font-family: 'Roboto', sans-serif;
-  font-family: 'Salsa', cursive;
 }
 
 img {
@@ -22,4 +18,8 @@ menu {
 a {
   color: currentColor;
   text-decoration: none;
+}
+
+.title {
+  font-weight: 500;
 }
