@@ -6,6 +6,7 @@ import Section3 from './Section3.vue';
 import Section4 from './Section4.vue';
 import Section5 from './Section5.vue';
 import Section6 from './Section6.vue';
+import Carousel from './Carousel.vue';
 export default {
   name: 'Main',
   components: {
@@ -16,6 +17,7 @@ export default {
     Section4,
     Section5,
     Section6,
+    Carousel,
   },
   data() {
     return {
@@ -46,6 +48,9 @@ export default {
   </div>
   <div>
     <Section6 />
+  </div>
+  <div>
+    <Carousel />
   </div>
 </template>
 
