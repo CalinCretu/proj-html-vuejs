@@ -35,8 +35,8 @@ export default {
     <div class="container-md">
       <ul class="cards">
         <li v-for="(counter, i) in counters" :key="i">
-          <div class="icon">
-            <a href="#"><a href="#"><font-awesome-icon :icon="counter.icon" /></a></a>
+          <div>
+            <a class="icon" href="#"><a href="#"><font-awesome-icon :icon="counter.icon" /></a></a>
           </div>
           <div class="counter">
             {{ counter.counter }}
@@ -63,6 +63,13 @@ export default {
 
     .icon {
       font-size: 60px;
+      border: 1px solid transparent;
+      border-radius: 50px;
+    }
+
+    .icon:hover {
+      color: #F2870C;
+      filter: drop-shadow(0px 0px 50px #F2870C);
     }
 
     .counter {
