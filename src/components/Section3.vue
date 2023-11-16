@@ -139,11 +139,6 @@ export default {
       ]
     }
   },
-  mounted() {
-    this.cards.forEach((card) => {
-      console.log(card.icons[0].prova);
-    });
-  }
 }
 </script>
 
