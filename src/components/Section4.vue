@@ -27,7 +27,7 @@ export default {
 
   .container-md {
     text-align: start;
-    padding: 200px 0;
+    padding: 240px 0;
 
     .title {
       margin-bottom: 40px;
