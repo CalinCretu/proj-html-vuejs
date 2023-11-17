@@ -99,7 +99,6 @@ export default {
             <a href="#">
               <div>{{ link.link }}</div>
             </a>
-
           </li>
         </ul>
       </li>

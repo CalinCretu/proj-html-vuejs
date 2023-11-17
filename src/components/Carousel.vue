@@ -32,7 +32,7 @@ export default {
 </script>
 <template>
   <div class="container-lg">
-    <Swiper :slides-per-view="8" :loop="true" :pagination="{ clickable: true, }"
+    <Swiper :slides-per-view="8" :grabCursor="true" :loop="true" :pagination="{ clickable: true, }"
       :autoplay="{ delay: 3000, disableOnInteraction: false, }" :modules="modules">
       <SwiperSlide v-for="photo in photos">
         <img :src="`public/imgs/${photo}`" alt="">

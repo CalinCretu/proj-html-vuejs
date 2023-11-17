@@ -1,27 +1,28 @@
 <script>
 import Hero from './Hero.vue';
-import Section1 from './Section1.vue';
-import Section2 from './Section2.vue';
-import Section3 from './Section3.vue';
-import Section4 from './Section4.vue';
-import Section5 from './Section5.vue';
-import Section6 from './Section6.vue';
+import SenseTheJazz from './SenseTheJazz.vue';
+import NewMusicVideo from './NewMusicVideo.vue';
+import SenseTheJazz2 from './SenseTheJazz2.vue';
+import AlbumOutNow from './AlbumOutNow.vue';
+import Counter from './Counter.vue';
+import BestMusicBlog from './BestMusicBlog.vue';
 import Carousel from './Carousel.vue';
+import { store } from '../store';
 export default {
   name: 'Main',
   components: {
     Hero,
-    Section1,
-    Section2,
-    Section3,
-    Section4,
-    Section5,
-    Section6,
+    SenseTheJazz,
+    NewMusicVideo,
+    SenseTheJazz2,
+    AlbumOutNow,
+    Counter,
+    BestMusicBlog,
     Carousel,
   },
   data() {
     return {
-
+      store: store,
     }
   }
 }
@@ -32,22 +33,22 @@ export default {
     <Hero />
   </div>
   <div>
-    <Section1 />
+    <SenseTheJazz />
   </div>
   <div>
-    <Section2 />
+    <NewMusicVideo />
   </div>
   <div>
-    <Section3 />
+    <SenseTheJazz2 :cards="card" />
   </div>
   <div>
-    <Section4 />
+    <AlbumOutNow />
   </div>
   <div>
-    <Section5 />
+    <Counter />
   </div>
   <div>
-    <Section6 />
+    <BestMusicBlog />
   </div>
   <div>
     <Carousel />

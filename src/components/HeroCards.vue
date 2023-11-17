@@ -1,25 +1,15 @@
 <script>
+import { store } from '../store'
 export default {
   name: 'HeroCards',
+  props: {
+    item: {
+      hero_cards: Object,
+    }
+  },
   data() {
     return {
-      cards: [
-        {
-          image: 'fa-solid fa-drum',
-          title: 'Original Ideas',
-          description: 'Contrary Popular Belief, Lorem Ipsum Not Simply Ipsum Ransom Text',
-        },
-        {
-          image: 'fa-solid fa-compact-disc',
-          title: 'Music Studio',
-          description: 'Contrary Popular Belief, Lorem Ipsum Not Simply Ipsum Ransom Text',
-        },
-        {
-          image: 'fa-solid fa-headphones',
-          title: 'Acoustic Covers',
-          description: 'Contrary Popular Belief, Lorem Ipsum Not Simply Ipsum Ransom Text',
-        },
-      ]
+      store: store,
     }
   }
 }
@@ -28,15 +18,15 @@ export default {
 <template>
   <div class="card-container">
     <ul class="cards">
-      <li class="card" v-for="card in cards">
+      <li class="card" v-for="hero_card in store.hero_card">
         <div>
-          <font-awesome-icon class="icon" :icon="card.image" />
+          <font-awesome-icon class="icon" :icon="hero_card.image" />
         </div>
         <div class="card-title">
-          {{ card.title }}
+          {{ hero_card.title }}
         </div>
         <div class="card-description">
-          {{ card.description }}
+          {{ hero_card.description }}
         </div>
       </li>
     </ul>
@@ -51,6 +41,7 @@ export default {
   position: absolute;
   transform: translate(-50%, -50%);
   left: 50%;
+  z-index: 3;
 
   .cards {
     display: grid;
