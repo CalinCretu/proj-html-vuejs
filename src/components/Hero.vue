@@ -30,7 +30,7 @@ export default {
 
 <template>
   <div class="container-lg">
-    <Swiper :autoplay="{ delay: 3000, disableOnInteraction: false, }" :slides-per-view="1" :loop="true"
+    <Swiper :autoplay="{ delay: 5000, disableOnInteraction: false, }" :speed="3000" :slides-per-view="1" :loop="true"
       :effect="'creative'" :creativeEffect="{
         prev: {
           shadow: true,
