@@ -6,8 +6,8 @@ import 'swiper/css/autoplay';
 import 'swiper/css/pagination';
 import 'swiper/css/navigation';
 import 'swiper/css/effect-creative';
-import HeroCards from './HeroCards.vue'
-import { store } from '../store'
+import HeroCards from './HeroCards.vue';
+import { store } from '../store';
 export default {
   name: 'Hero',
   components: {
@@ -22,6 +22,7 @@ export default {
       photos: [
         'image-hero1.png',
         'image-hero2.png',
+        '/imgs/cms_parallax.jpg'
       ],
     }
   }

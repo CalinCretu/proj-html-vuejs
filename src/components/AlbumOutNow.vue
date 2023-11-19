@@ -23,7 +23,9 @@ export default {
 
 <style lang="scss" scoped>
 .container-lg {
-  background-image: url('imgs/cms_parallax.jpg');
+  background: url('imgs/cms_parallax.jpg')no-repeat,
+    url('imgs/consequence_of_sound_make_us.jpg')no-repeat;
+  background-position: 50% -375px;
 
   .container-md {
     text-align: start;

@@ -76,13 +76,13 @@ export default {
     }
 
     .card:first-child:hover img {
-      transform: scale(1.1) rotate(-5deg);
+      transform: scale(1.1) rotate(-2deg);
       box-shadow: 0px 0px 40px #F2870C;
       transition: all 1s ease-in-out;
     }
 
     .card:last-child:hover img {
-      transform: scale(1.1) rotate(5deg);
+      transform: scale(1.1) rotate(2deg);
       box-shadow: 0px 0px 40px #F2870C;
       transition: all 1s ease-in-out;
     }
